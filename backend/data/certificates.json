@@ -1,0 +1,13 @@
+[
+  {
+    "id": "CERT-DEMO-TS99",
+    "skillName": "TypeScript",
+    "recipientName": "Alex Turner",
+    "issuedDate": "November 19, 2026",
+    "scorePercent": 100,
+    "verificationCode": "VERIFIED-982341",
+    "badgeTitle": "TypeScript Certified Professional",
+    "status": "Officially Verified",
+    "issuer": "UpskillAI Workforce Authority"
+  }
+]

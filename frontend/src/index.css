@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================================================================
+   THEME: CSS Custom Properties — Design Token Foundation
+   
+   Strategy: Light theme is DEFAULT (:root). Dark theme requires .dark on <html>.
+   
+   The zinc color scale is INVERTED in light mode:
+     - zinc-100 (normally near-white) → maps to near-black slate-900 for dark text
+     - zinc-800 (normally near-black) → maps to near-white slate-200 for light surfaces
+   
+   This allows every existing component that uses text-zinc-100, bg-zinc-800 etc.
+   to automatically render correctly in both themes without code changes.
+============================================================================= */
+
+@layer base {
+
+  /* =========================================
+     LIGHT THEME (default — no class required)
+  ========================================= */
+  :root {
+    /* App Surface Hierarchy */
+    --app-bg:           248 250 252;   /* slate-50 — main canvas */
+    --app-sidebar:      255 255 255;   /* white — sidebar panel */
+    --app-surface:      241 245 249;   /* slate-100 — secondary surfaces */
+    --app-card:         255 255 255;   /* white — elevated cards */
+    --app-hover:        226 232 240;   /* slate-200 — hover state */
+    --app-border:       226 232 240;   /* slate-200 — hairline borders */
+    --app-borderSubtle: 241 245 249;   /* slate-100 — very subtle borders */
+    --app-divider:      203 213 225;   /* slate-300 — section dividers */
+
+    /* Zinc Scale — INVERTED for light mode readability
+       Low numbers = dark colors (for text on light bg)
+       High numbers = light colors (for surfaces on light bg) */
+    --zinc-50:  2   6   23;    /* near-black navy — deepest text */
+    --zinc-100: 15  23  42;    /* slate-900 — primary headings & labels */
+    --zinc-200: 30  41  59;    /* slate-800 — secondary text */
+    --zinc-300: 51  65  85;    /* slate-700 — body text */
+    --zinc-400: 71  85  105;   /* slate-600 — muted text */
+    --zinc-500: 100 116 139;   /* slate-500 — hint text / mid-contrast */
+    --zinc-600: 148 163 184;   /* slate-400 — very muted / placeholders */
+    --zinc-700: 203 213 225;   /* slate-300 — border colors */
+    --zinc-750: 215 221 229;   /* slate-250 — subtle hover bg */
+    --zinc-800: 226 232 240;   /* slate-200 — card / chip surfaces */
+    --zinc-900: 241 245 249;   /* slate-100 — deepest bg tones */
+    --zinc-950: 248 250 252;   /* slate-50  — app canvas */
+
+    /* White → near-black in light mode (used for text-white headings) */
+    --color-white: 15 23 42;   /* slate-900 */
+
+    /* Scrollbar */
+    --scrollbar-thumb:       203 213 225;   /* slate-300 */
+    --scrollbar-thumb-hover: 148 163 184;   /* slate-400 */
+  }
+
+  /* =========================================
+     DARK THEME (.dark class on <html>)
+  ========================================= */
+  .dark {
+    /* App Surface Hierarchy */
+    --app-bg:           9   11  16;    /* deep charcoal canvas */
+    --app-sidebar:      13  15  22;    /* sidebar panel */
+    --app-surface:      18  22  32;    /* secondary surfaces */
+    --app-card:         22  27  38;    /* elevated cards */
+    --app-hover:        29  35  50;    /* hover state */
+    --app-border:       35  42  59;    /* hairline borders */
+    --app-borderSubtle: 26  32  46;    /* subtle borders */
+    --app-divider:      42  51  71;    /* section dividers */
+
+    /* Zinc Scale — STANDARD dark-mode values */
+    --zinc-50:  250 250 250;
+    --zinc-100: 244 244 245;
+    --zinc-200: 228 228 231;
+    --zinc-300: 212 212 216;
+    --zinc-400: 161 161 170;
+    --zinc-500: 113 113 122;
+    --zinc-600: 82  82  91;
+    --zinc-700: 63  63  70;
+    --zinc-750: 50  50  58;    /* custom mid-step between 700 and 800 */
+    --zinc-800: 39  39  42;
+    --zinc-900: 24  24  27;
+    --zinc-950: 9   9   11;
+
+    /* White → pure white in dark mode */
+    --color-white: 255 255 255;
+
+    /* Scrollbar */
+    --scrollbar-thumb:       35 42 59;    /* app-border tone */
+    --scrollbar-thumb-hover: 54 65 88;    /* slightly lighter */
+  }
+
+  body {
+    @apply bg-app-bg text-zinc-100 font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* =============================================================================
+   UTILITY CLASSES
+============================================================================= */
+@layer utilities {
+  .app-border {
+    @apply border border-app-border;
+  }
+  .app-border-subtle {
+    @apply border border-app-borderSubtle;
+  }
+  /* Primary raised panel (cards, panes) */
+  .app-panel {
+    @apply bg-app-card border border-app-border rounded-xl shadow-sm;
+  }
+  /* Interactive panel with hover state */
+  .app-panel-interactive {
+    @apply bg-app-card border border-app-border rounded-xl transition-all duration-150
+           hover:border-zinc-700 hover:bg-app-hover;
+  }
+  /* Tabular numeric figures that don't jump on update */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* =============================================================================
+   SCROLLBARS — theme-aware via CSS vars
+============================================================================= */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--scrollbar-thumb));
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--scrollbar-thumb-hover));
+}

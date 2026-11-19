@@ -1,0 +1,545 @@
+{
+  "jobRoles": [
+    {
+      "id": "fullstack-dev",
+      "title": "Full Stack Web Developer",
+      "category": "Software Engineering",
+      "matchKeywords": ["react", "javascript", "node.js", "express", "html", "css", "mongodb", "postgresql", "sql", "typescript", "git", "rest api"],
+      "demandScore": 95,
+      "avgSalary": "$115,000 / yr",
+      "description": "Designs, builds, and maintains both client-side frontend interfaces and server-side backend logic for full-scale web applications.",
+      "requiredSkills": ["React", "TypeScript", "Node.js", "GraphQL/REST APIs", "PostgreSQL", "Docker", "System Design"],
+      "upSkillPriority": ["TypeScript", "GraphQL", "Docker", "System Design"]
+    },
+    {
+      "id": "aiml-engineer",
+      "title": "AI / Machine Learning Engineer",
+      "category": "Artificial Intelligence",
+      "matchKeywords": ["python", "machine learning", "deep learning", "tensorflow", "pytorch", "pandas", "numpy", "scikit-learn", "ai", "nlp", "llm", "data analysis"],
+      "demandScore": 98,
+      "avgSalary": "$145,000 / yr",
+      "description": "Develops, trains, and deploys intelligent machine learning models, neural networks, and generative AI features into production environments.",
+      "requiredSkills": ["Python", "PyTorch / TensorFlow", "Prompt Engineering", "RAG & Vector Databases", "LangChain / LlamaIndex", "Model Fine-tuning", "MPOps"],
+      "upSkillPriority": ["RAG & Vector Databases", "LangChain / LlamaIndex", "Model Fine-tuning", "Prompt Engineering"]
+    },
+    {
+      "id": "data-scientist",
+      "title": "Data Scientist & Analytics Specialist",
+      "category": "Data & Analytics",
+      "matchKeywords": ["python", "r", "sql", "pandas", "tableau", "power bi", "statistics", "data visualization", "data analysis", "big data", "spark"],
+      "demandScore": 90,
+      "avgSalary": "$125,000 / yr",
+      "description": "Transforms raw business data into actionable strategic insights using statistical models, predictive analytics, and visualization tools.",
+      "requiredSkills": ["Advanced SQL", "Python for Analytics", "PowerBI / Tableau", "Predictive Modeling", "Big Query / Snowflake"],
+      "upSkillPriority": ["Big Query / Snowflake", "Advanced SQL", "Predictive Modeling"]
+    },
+    {
+      "id": "devops-cloud",
+      "title": "Cloud & DevOps Engineer",
+      "category": "Cloud Infrastructure",
+      "matchKeywords": ["aws", "azure", "gcp", "docker", "kubernetes", "terraform", "ci/cd", "linux", "bash", "ansible", "cloud"],
+      "demandScore": 92,
+      "avgSalary": "$130,000 / yr",
+      "description": "Automates deployment pipelines, manages cloud infrastructure scalability, and ensures continuous deployment reliability.",
+      "requiredSkills": ["Kubernetes", "AWS Cloud Architecture", "Terraform Infrastructure as Code", "CI/CD Pipelines", "Site Reliability Engineering"],
+      "upSkillPriority": ["Kubernetes", "Terraform Infrastructure as Code", "AWS Cloud Architecture"]
+    },
+    {
+      "id": "cybersecurity",
+      "title": "Cybersecurity & Risk Analyst",
+      "category": "Security",
+      "matchKeywords": ["cybersecurity", "network security", "penetration testing", "ethical hacking", "siem", "firewall", "security", "linux", "compliance"],
+      "demandScore": 88,
+      "avgSalary": "$120,000 / yr",
+      "description": "Protects organizational networks, applications, and sensitive cloud assets from cyber threats, vulnerabilities, and unauthorized access.",
+      "requiredSkills": ["Ethical Hacking", "Cloud Security (AWS/Azure)", "SIEM & Threat Hunting", "Network Security", "Zero Trust Architecture"],
+      "upSkillPriority": ["Cloud Security (AWS/Azure)", "SIEM & Threat Hunting", "Zero Trust Architecture"]
+    },
+    {
+      "id": "product-manager",
+      "title": "AI Product Manager",
+      "category": "Product & Strategy",
+      "matchKeywords": ["product management", "agile", "scrum", "jira", "roadmap", "user stories", "market research", "kpis", "ux research"],
+      "demandScore": 89,
+      "avgSalary": "$135,000 / yr",
+      "description": "Leads cross-functional teams to define AI product strategy, user requirements, feature prioritization, and market release velocity.",
+      "requiredSkills": ["AI Product Strategy", "Agile & Scrum Leadership", "Data Driven Decision Making", "UX Research", "Technical Specs & Roadmapping"],
+      "upSkillPriority": ["AI Product Strategy", "Data Driven Decision Making"]
+    }
+  ],
+  "skillsMaster": {
+    "TypeScript": {
+      "category": "Frontend & Backend Development",
+      "level": "Intermediate to Advanced",
+      "marketDemand": "High Growth (+42% job openings)",
+      "estimatedHours": 18,
+      "description": "Master strongly-typed JavaScript to build scalable, bug-free web applications with strict type safety and modern toolchains.",
+      "roadmap": [
+        {
+          "module": "1. TypeScript Fundamentals & Type Annotations",
+          "estimatedDays": "3 Days",
+          "topics": [
+            "Primitive types, type inference, and explicit typing",
+            "Interfaces vs Type Aliases",
+            "Union types, intersection types, and literal types",
+            "Function signatures and optional/default parameters"
+          ],
+          "exercise": "Refactor a JS mini-app to strict TypeScript with 0 compilation errors."
+        },
+        {
+          "module": "2. Advanced Generics & Utility Types",
+          "estimatedDays": "4 Days",
+          "topics": [
+            "Generic functions, interfaces, and classes",
+            "Built-in utility types: Partial, Required, Readonly, Pick, Omit",
+            "Mapped types and Conditional types (`infer` keyword)",
+            "Template literal types for state management"
+          ],
+          "exercise": "Build a type-safe generic API client handler with dynamic path parameters."
+        },
+        {
+          "module": "3. TypeScript with React & Node.js",
+          "estimatedDays": "5 Days",
+          "topics": [
+            "Typing React Props, State, and Context APIs",
+            "Custom typed React Hooks (`useReducer`, `useRef`)",
+            "Express.js request/response typing and middleware validation",
+            "Zod schema validation integrated with TypeScript types"
+          ],
+          "exercise": "Create a fully typed Full-Stack React + Express form with Zod schema validation."
+        },
+        {
+          "module": "4. Performance, Tooling & Production Best Practices",
+          "estimatedDays": "4 Days",
+          "topics": [
+            "`tsconfig.json` optimization and strict flag configs",
+            "ESBuild vs Vite compilation targets",
+            "Managing monorepos and declaration files (`.d.ts`)",
+            "Type-safe API contracts (tRPC or OpenAPI codegen)"
+          ],
+          "exercise": "Set up a monorepo typescript configuration with shared type exports."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "ts_1",
+          "question": "Which keyword is used to derive a type from an existing runtime JavaScript object or variable?",
+          "options": ["typeof", "instanceof", "keyof", "type"],
+          "correctIndex": 0,
+          "explanation": "`typeof` in a TypeScript type context allows referencing the static type of a runtime variable or object."
+        },
+        {
+          "id": "ts_2",
+          "question": "What is the key difference between an `interface` and a `type` declaration in TypeScript?",
+          "options": [
+            "Interfaces can be merged (declaration merging), whereas type aliases cannot.",
+            "Type aliases can only store string values.",
+            "Interfaces do not support objects.",
+            "There is no functional difference."
+          ],
+          "correctIndex": 0,
+          "explanation": "Interfaces allow declaration merging (multiple declarations with the same name auto-merge), while type aliases cannot be re-declared."
+        },
+        {
+          "id": "ts_3",
+          "question": "How does `Omit<T, K>` utility type work?",
+          "options": [
+            "It picks only the properties in K from T.",
+            "It constructs a type by picking all properties from T and then removing K.",
+            "It makes all properties in T optional except K.",
+            "It creates a union type of T and K."
+          ],
+          "correctIndex": 1,
+          "explanation": "`Omit<T, K>` constructs a type with all properties of type T except those listed in key selection K."
+        },
+        {
+          "id": "ts_4",
+          "question": "What is the result of using `unknown` vs `any` in TypeScript?",
+          "options": [
+            "`unknown` is type-safe because you must perform type checking before invoking methods on it.",
+            "`any` disables type checking and is safer than `unknown`.",
+            "`unknown` can be assigned directly to string without assertion.",
+            "Both are completely identical."
+          ],
+          "correctIndex": 0,
+          "explanation": "`unknown` is the type-safe counterpart to `any`. You cannot perform operations on `unknown` without narrowing or type checks."
+        },
+        {
+          "id": "ts_5",
+          "question": "What does the `never` return type signify in TypeScript?",
+          "options": [
+            "The function returns undefined.",
+            "The function returns null.",
+            "The function never returns an end point (e.g. throws an exception or infinite loop).",
+            "The function returns asynchronously."
+          ],
+          "correctIndex": 2,
+          "explanation": "`never` represents the type of values that never occur, such as a function that throws an error or never finishes executing."
+        }
+      ]
+    },
+    "RAG & Vector Databases": {
+      "category": "Artificial Intelligence & LLMs",
+      "level": "Intermediate to Advanced",
+      "marketDemand": "Extreme (+110% demand)",
+      "estimatedHours": 24,
+      "description": "Learn Retrieval-Augmented Generation (RAG) to connect LLMs with custom enterprise documents, vector stores, and embeddings.",
+      "roadmap": [
+        {
+          "module": "1. Vector Embeddings & Similarity Search",
+          "estimatedDays": "4 Days",
+          "topics": [
+            "Text embedding models (OpenAI text-embedding-3, HuggingFace sentence-transformers)",
+            "Cosine similarity, Euclidean distance, and Dot product",
+            "Chunking strategies: Recursive character, semantic, and token sliding window",
+            "Vector databases comparison: Pinecone, Qdrant, Chroma, Weaviate, pgvector"
+          ],
+          "exercise": "Implement a semantic document chunker and store vectors in Chroma/Qdrant DB."
+        },
+        {
+          "module": "2. RAG Pipeline Architecture & Orchestration",
+          "estimatedDays": "5 Days",
+          "topics": [
+            "Building RAG workflows with LangChain & LlamaIndex",
+            "Document Loaders (PDF, Markdown, HTML, Notion)",
+            "Hybrid Search (BM25 keyword search + Dense Vector Search)",
+            "Context window optimization and prompt context formatting"
+          ],
+          "exercise": "Build a Q&A chatbot over enterprise PDF documentation using hybrid retrieval."
+        },
+        {
+          "module": "3. Advanced RAG Patterns & Re-ranking",
+          "estimatedDays": "5 Days",
+          "topics": [
+            "Query Rewriting, Multi-query expansion, and HyDE (Hypothetical Document Embeddings)",
+            "Cross-Encoder Re-ranking (Cohere Rerank, BGE-Reranker)",
+            "Graph RAG & Knowledge Graph integrations",
+            "Handling multi-modal inputs (Image + Text RAG)"
+          ],
+          "exercise": "Enhance precision with a Cohere re-ranker stage and query expansion."
+        },
+        {
+          "module": "4. RAG Evaluation & Production Security",
+          "estimatedDays": "4 Days",
+          "topics": [
+            "RAG Triad metrics: Faithfulness, Answer Relevance, Context Relevance",
+            "Evaluation frameworks: Ragas, TruLens, DeepEval",
+            "Handling Hallucinations & Guardrails (NeMo Guardrails, Llama Guard)",
+            "Vector DB security, RBAC, and data privacy"
+          ],
+          "exercise": "Set up automated Ragas benchmark tests to score RAG accuracy and faithfulness."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "rag_1",
+          "question": "What is the primary objective of Retrieval-Augmented Generation (RAG)?",
+          "options": [
+            "To ground LLMs with external factual data without requiring expensive model re-training.",
+            "To speed up LLM GPU matrix multiplication.",
+            "To compress text files into zip archives.",
+            "To replace transformer architecture with decision trees."
+          ],
+          "correctIndex": 0,
+          "explanation": "RAG enhances LLM responses by retrieving relevant documents from a knowledge base and passing them in context."
+        },
+        {
+          "id": "rag_2",
+          "question": "Why is 'Hybrid Search' often preferred over pure dense vector search in RAG?",
+          "options": [
+            "Hybrid search combines semantic similarity (vectors) with keyword matching (BM25/sparse), handling exact terms like product codes better.",
+            "Hybrid search does not require a database.",
+            "Vector search cannot work with text.",
+            "Hybrid search eliminates LLM latency."
+          ],
+          "correctIndex": 0,
+          "explanation": "Hybrid search blends sparse keyword match (great for exact names/IDs) with dense vector search (great for semantic meaning)."
+        },
+        {
+          "id": "rag_3",
+          "question": "What does a Cross-Encoder Reranker do in an advanced RAG pipeline?",
+          "options": [
+            "It re-evaluates retrieved document chunks together with the query to produce a more precise relevance ranking.",
+            "It translates English prompts into French.",
+            "It deletes duplicate database tables.",
+            "It compresses vector embeddings to 8-bit integers."
+          ],
+          "correctIndex": 0,
+          "explanation": "Cross-encoders process the query and retrieved passage jointly to calculate deeper semantic relevance score than vector inner-products."
+        },
+        {
+          "id": "rag_4",
+          "question": "Which distance metric is invariant to vector magnitude when measuring angle between embeddings?",
+          "options": ["Cosine Similarity", "Manhattan Distance", "Hamming Distance", "L1 Norm"],
+          "correctIndex": 0,
+          "explanation": "Cosine similarity measures the cosine of the angle between two non-zero vectors, normalizing vector magnitudes."
+        },
+        {
+          "id": "rag_5",
+          "question": "What metric in the RAG Triad evaluates whether the generated answer contains information NOT supported by the retrieved context?",
+          "options": ["Faithfulness", "Context Recall", "Query Latency", "Embedding Dimension"],
+          "correctIndex": 0,
+          "explanation": "Faithfulness measures how grounded the answer is in the retrieved context to detect hallucinations."
+        }
+      ]
+    },
+    "Kubernetes": {
+      "category": "DevOps & Infrastructure",
+      "level": "Intermediate to Advanced",
+      "marketDemand": "High Growth (+38% demand)",
+      "estimatedHours": 20,
+      "description": "Master container orchestration, automated deployments, service scaling, and cloud-native application management.",
+      "roadmap": [
+        {
+          "module": "1. Core Architecture & Pod Management",
+          "estimatedDays": "4 Days",
+          "topics": [
+            "Control Plane components (API Server, etcd, Scheduler, Controller Manager)",
+            "Worker node components (Kubelet, Kube-proxy, Container Runtime)",
+            "Pods, Deployments, ReplicaSets, and Namespaces",
+            "YAML manifest syntax and `kubectl` imperative & declarative commands"
+          ],
+          "exercise": "Deploy a multi-tier microservice application using Kubernetes manifests."
+        },
+        {
+          "module": "2. Networking, Services & Ingress",
+          "estimatedDays": "4 Days",
+          "topics": [
+            "ClusterIP, NodePort, and LoadBalancer services",
+            "Ingress Controllers (NGINX, Traefik, Cert-Manager for HTTPS)",
+            "Kubernetes CNI (Calico, Cilium)",
+            "CoreDNS and cluster DNS resolution"
+          ],
+          "exercise": "Expose web service via NGINX Ingress Controller with SSL certificates."
+        },
+        {
+          "module": "3. Storage, Configs & State Management",
+          "estimatedDays": "4 Days",
+          "topics": [
+            "ConfigMaps and Secrets management",
+            "PersistentVolumes (PV), PersistentVolumeClaims (PVC), and StorageClasses",
+            "StatefulSets vs Deployments for databases",
+            "External Secrets Operator integration"
+          ],
+          "exercise": "Deploy a persistent Postgres database using StatefulSet and PVCs."
+        },
+        {
+          "module": "4. Auto-scaling, Helm & Production Monitoring",
+          "estimatedDays": "5 Days",
+          "topics": [
+            "Horizontal Pod Autoscaler (HPA) & Vertical Pod Autoscaler (VPA)",
+            "Helm package manager charts and custom templating",
+            "Prometheus & Grafana monitoring stack",
+            "Security Contexts, RBAC, and Network Policies"
+          ],
+          "exercise": "Package microservices into a Helm chart and configure HPA auto-scaling based on CPU load."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "k8s_1",
+          "question": "Which control plane component serves as the consistent, highly-available key-value store for all cluster data?",
+          "options": ["etcd", "kube-apiserver", "kube-scheduler", "kube-controller-manager"],
+          "correctIndex": 0,
+          "explanation": "`etcd` is the primary backing store for all Kubernetes cluster data and state."
+        },
+        {
+          "id": "k8s_2",
+          "question": "What type of Kubernetes Service should be used to route external HTTP traffic to internal pods via domain rules?",
+          "options": ["Ingress", "ClusterIP", "NodePort", "Headless Service"],
+          "correctIndex": 0,
+          "explanation": "Ingress manages external access to the services in a cluster, typically HTTP/HTTPS with domain-based routing."
+        },
+        {
+          "id": "k8s_3",
+          "question": "How does Horizontal Pod Autoscaler (HPA) determine when to add more pod replicas?",
+          "options": [
+            "By monitoring metric thresholds like CPU usage, memory utilization, or custom Prometheus metrics against targets.",
+            "By checking hard drive capacity.",
+            "By measuring internet speed.",
+            "By restarting worker nodes."
+          ],
+          "correctIndex": 0,
+          "explanation": "HPA automatically updates workload resources (Deployments/StatefulSets) to match demand based on CPU/memory/custom metrics."
+        },
+        {
+          "id": "k8s_4",
+          "question": "What is the key difference between a StatefulSet and a Deployment in Kubernetes?",
+          "options": [
+            "StatefulSet maintains sticky identities and ordered deployment for each of its pods, making it suitable for stateful workloads like DBs.",
+            "Deployments cannot run containerized code.",
+            "StatefulSets only run on Windows.",
+            "Deployments automatically create persistent storage."
+          ],
+          "correctIndex": 0,
+          "explanation": "StatefulSets provide persistent identifiers and guaranteed ordering, essential for stateful databases like Postgres/Cassandra."
+        },
+        {
+          "id": "k8s_5",
+          "question": "Which kubectl command applies declarative configuration changes from a file to a Kubernetes cluster?",
+          "options": ["kubectl apply -f filename.yaml", "kubectl create pod", "kubectl run --image", "kubectl exec -it"],
+          "correctIndex": 0,
+          "explanation": "`kubectl apply -f` reads manifest files and declaratively updates resources to match the file definition."
+        }
+      ]
+    },
+    "Docker": {
+      "category": "DevOps & Containerization",
+      "level": "Beginner to Intermediate",
+      "marketDemand": "Essential Core Skill",
+      "estimatedHours": 12,
+      "description": "Learn containerization concepts, building multi-stage Dockerfiles, Docker Compose multi-container environments, and image security.",
+      "roadmap": [
+        {
+          "module": "1. Containerization & Docker CLI Fundamentals",
+          "estimatedDays": "2 Days",
+          "topics": [
+            "Virtual Machines vs Containers",
+            "Docker Architecture: Daemon, Images, Containers, Registry",
+            "Essential CLI commands (`docker run`, `ps`, `exec`, `logs`, `stop`)",
+            "Port mapping and container environment variables"
+          ],
+          "exercise": "Run Node & Postgres containers interactively with port bindings."
+        },
+        {
+          "module": "2. Crafting Production Dockerfiles",
+          "estimatedDays": "3 Days",
+          "topics": [
+            "Dockerfile directives: FROM, WORKDIR, COPY, RUN, CMD, ENTRYPOINT",
+            "Layer caching optimization & `.dockerignore`",
+            "Multi-stage builds to minimize image sizes (Alpine/Distroless)",
+            "Non-root security execution"
+          ],
+          "exercise": "Create a multi-stage Dockerfile for a React frontend reducing image size from 800MB to 25MB."
+        },
+        {
+          "module": "3. Docker Compose & Networking",
+          "estimatedDays": "3 Days",
+          "topics": [
+            "`docker-compose.yml` specification and multi-service stacks",
+            "Bridge vs Host networks & container inter-communication",
+            "Named Volumes vs Bind Mounts for persistent storage",
+            "Health checks and container dependency ordering (`depends_on`)"
+          ],
+          "exercise": "Spin up a full-stack App + Postgres + Redis environment using Docker Compose."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "doc_1",
+          "question": "What is the primary benefit of Multi-stage Docker builds?",
+          "options": [
+            "They significantly reduce final image size by discarding build tools and heavy dependencies not needed at runtime.",
+            "They allow running Windows and Linux containers simultaneously.",
+            "They double container CPU performance.",
+            "They automatically publish code to GitHub."
+          ],
+          "correctIndex": 0,
+          "explanation": "Multi-stage builds allow you to use separate build stages and copy only final compiled artifacts to a minimal runtime base image."
+        },
+        {
+          "id": "doc_2",
+          "question": "What is the difference between CMD and ENTRYPOINT in a Dockerfile?",
+          "options": [
+            "ENTRYPOINT sets the default command that always runs, while CMD provides arguments that can be easily overridden.",
+            "CMD cannot run shell scripts.",
+            "ENTRYPOINT is only used in development.",
+            "Both are ignored when containers run."
+          ],
+          "correctIndex": 0,
+          "explanation": "ENTRYPOINT sets the default executable, while CMD sets default parameters that can be overridden from the command line."
+        }
+      ]
+    },
+    "Prompt Engineering": {
+      "category": "Artificial Intelligence & LLMs",
+      "level": "Beginner to Intermediate",
+      "marketDemand": "High Demand (+75%)",
+      "estimatedHours": 10,
+      "description": "Learn system prompting, Few-Shot prompting, Chain-of-Thought reasoning, and structured JSON output techniques for LLM integrations.",
+      "roadmap": [
+        {
+          "module": "1. Prompt Design Fundamentals",
+          "estimatedDays": "2 Days",
+          "topics": [
+            "Structure of effective prompts: Role, Context, Task, Input Data, Constraints",
+            "Zero-Shot vs Few-Shot Prompting with examples",
+            "System prompts vs User messages",
+            "Temperature, Top-P, and frequency penalty parameters"
+          ],
+          "exercise": "Craft system prompts for consistent entity extraction across complex text."
+        },
+        {
+          "module": "2. Advanced Reasoning & Guardrails",
+          "estimatedDays": "3 Days",
+          "topics": [
+            "Chain-of-Thought (CoT) prompting for step-by-step reasoning",
+            "Tree of Thoughts & ReAct (Reason + Act) patterns",
+            "Enforcing strict structured outputs (JSON schema enforcement)",
+            "Defensive prompting against prompt injection & jailbreaks"
+          ],
+          "exercise": "Build an LLM prompt pipeline that produces validated JSON output with self-correction."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "prompt_1",
+          "question": "What is Chain-of-Thought (CoT) prompting?",
+          "options": [
+            "Instructing the model to show step-by-step reasoning before outputting the final answer, improving accuracy on complex logic.",
+            "Connecting multiple LLMs in a physical chain.",
+            "Sending prompts via blockchain.",
+            "Repeating the same prompt 10 times."
+          ],
+          "correctIndex": 0,
+          "explanation": "Chain-of-Thought prompting encourages models to break down complex logic into intermediate reasoning steps."
+        }
+      ]
+    },
+    "System Design": {
+      "category": "Software Architecture",
+      "level": "Advanced",
+      "marketDemand": "High Demand",
+      "estimatedHours": 25,
+      "description": "Master designing distributed, scalable, resilient web architectures: load balancing, microservices, caching, database sharding, and messaging queues.",
+      "roadmap": [
+        {
+          "module": "1. Architectural Foundations & Scalability",
+          "estimatedDays": "4 Days",
+          "topics": [
+            "Horizontal vs Vertical Scaling",
+            "Load Balancers (Layer 4 vs Layer 7, Round Robin, Least Connections)",
+            "CAP Theorem, PACELC Theorem, and Consistency models",
+            "Caching strategies (CDN, Redis/Memcached, Cache-Aside, Write-Through)"
+          ],
+          "exercise": "Design high-level architecture for a URL shortening service like Bitly handling 10M DAU."
+        },
+        {
+          "module": "2. Data Storage & Message Queues",
+          "estimatedDays": "5 Days",
+          "topics": [
+            "SQL vs NoSQL trade-offs and selection frameworks",
+            "Database Replication, Sharding, and Indexing",
+            "Asynchronous processing with Message Queues (Kafka, RabbitMQ, SQS)",
+            "Event-Driven Architecture and CQRS pattern"
+          ],
+          "exercise": "Design a video streaming platform architecture (Netflix/YouTube scale)."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "sys_1",
+          "question": "According to the CAP theorem, what trade-off must a distributed database make in the presence of a network partition?",
+          "options": [
+            "Choose between Consistency (C) and Availability (A).",
+            "Choose between Speed and File size.",
+            "Choose between Security and Encryption.",
+            "No trade-off is required."
+          ],
+          "correctIndex": 0,
+          "explanation": "CAP theorem states that a distributed system can guarantee at most two of: Consistency, Availability, Partition Tolerance. When network partition occurs, you must pick C or A."
+        }
+      ]
+    }
+  }
+}
